@@ -40,7 +40,8 @@ if __name__ == "__main__":
     src1 = 0
     dst1 = 2
     k1 = 1
-    print(find_cheapest_route(routes1, src1, dst1, k1))  # Expected output: 200
+    result1 = find_cheapest_route(routes1, src1, dst1, k1) 
+    print(f"Routes: {routes1}, Source: {src1}, Destination: {dst1}, Stops: {k1}, Cheapest Route: {result1}") # Expected output: 200
     
 
     # Test case 2
@@ -48,18 +49,21 @@ if __name__ == "__main__":
     src2 = 0
     dst2 = 2
     k2 = 0
-    print(find_cheapest_route(routes2, src2, dst2, k2))  # Expected output: 500
+    result2 = find_cheapest_route(routes2, src2, dst2, k2) 
+    print(f"Routes: {routes2}, Source: {src2}, Destination: {dst2}, Stops: {k2}, Cheapest Route: {result2}") # Expected output: 500
 
     # Test case 3
     routes3 = [[0, 1, 100], [1, 2, 100], [0, 2, 500]]
     src3 = 0
     dst3 = 3
     k3 = 1
-    print(find_cheapest_route(routes3, src3, dst3, k3))  # Expected output: -1
+    result3 =find_cheapest_route(routes3, src3, dst3, k3) 
+    print(f"Routes: {routes3}, Source: {src3}, Destination: {dst3}, Stops: {k3}, Cheapest Route: {result3}") # Expected output: -1
     
     # Test case 4: No routes
     routes4 = []
     src4 = 0
     dst4 = 1
     k4 = 0
-    print(find_cheapest_route(routes4, src4, dst4, k4))  # Expected output: -1
+    result4 = find_cheapest_route(routes4, src4, dst4, k4) 
+    print(f"Routes: {routes4}, Source: {src4}, Destination: {dst4}, Stops: {k4}, Cheapest Route: {result4}")  # Expected output: -1
